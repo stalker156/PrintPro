@@ -40,7 +40,7 @@
             <td>{{getServiceNames(app.items[0].services)}}</td>
             <td>{{app.items[0].comment}}</td>
             <td rowspan="{{app.items.length}}">
-                <button ng-if="app.stage===0" type="button" class="btn btn-primary" ng-click="accept($index )">Принять</button>
+                <button ng-if="app.stage===0" type="button" class="btn btn-info" ng-click="accept($index )">Принять</button>
                 <span ng-if="app.stage===1">На обслуживании</span>
             </td>
         </tr>

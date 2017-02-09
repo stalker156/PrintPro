@@ -6,8 +6,8 @@
                 <h4 ng-if="selectedApplication">Закрыть заявку <b> №{{selectedApplication.number}}</b></h4>
             </div>
             <div class="col-md-5" ng-if="selectedApplication">
-                <button type="button" class="btn btn-primary" ng-click="closeApplication()()">Закрыть заявку</button>
-                <button type="button" class="btn btn-primary" ng-click="printActs()">Распечатать акт выполненных работ</button>
+                <button type="button" class="btn btn-info" ng-click="closeApplication()()">Закрыть заявку</button>
+                <button type="button" class="btn btn-info" ng-click="printActs()">Распечатать акт выполненных работ</button>
             </div>
         </div>
     </div>
@@ -50,7 +50,7 @@
                 <td></td>
                 <td>{{app.items[0].comment}}</td>
                 <td rowspan="{{app.items.length}}">
-                    <button ng-if="app.stage===1" type="button" class="btn btn-primary" ng-click="selectApp($index )">Выбрать</button>
+                    <button ng-if="app.stage===1" type="button" class="btn btn-info" ng-click="selectApp($index )">Выбрать</button>
                     <span ng-if="app.stage===2">Выполнено</span>
                 </td>
             </tr>
@@ -145,7 +145,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
-                    <button type="button" class="btn btn-primary" ng-click="changeItem()">Сохранить</button>
+                    <button type="button" class="btn btn-info" ng-click="changeItem()">Сохранить</button>
                 </div>
             </div>
         </div>
